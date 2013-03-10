@@ -51,7 +51,7 @@ function get_pic_file($pic_url_array, $pos){
 
 function main(){
 /* 待抓取图片的网页地址 */
-    $site_name = "http://365.us707.com/dy/2013-2-14.htm";
+    $site_name = "http://www.baidu.com/";
     $img_url = get_img_url($site_name);
     $img_url_revised = revise_site($img_url, $site_name);
     $img_url_unique = array_unique($img_url_revised); //unique array
