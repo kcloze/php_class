@@ -1,4 +1,8 @@
 <?php
+/*
+*抓取网页图片到本地
+*/
+
 /*完成网页内容捕获功能*/
 function get_img_url($site_name){
     $site_fd = fopen($site_name, "r");
