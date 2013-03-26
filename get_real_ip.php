@@ -34,13 +34,13 @@ function getIP()
  */
 function getCity($ip)
 {
-$url="http://ip.taobao.com/service/getIpInfo.php?ip=".$ip;
-$ip=json_decode(file_get_contents($url)); 
-if((string)$ip->code=='1'){
-  return false;
-  }
-  $data = (array)$ip->data;
-return $data; 
+    $url="http://ip.taobao.com/service/getIpInfo.php?ip=".$ip;
+    $ip=json_decode(file_get_contents($url)); 
+    if((string)$ip->code=='1'){
+      return false;
+      }
+      $data = (array)$ip->data;
+    return $data; 
 }
 
 
